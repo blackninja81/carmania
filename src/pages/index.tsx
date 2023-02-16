@@ -1,6 +1,10 @@
-import Head from 'next/head'
-import Navbar from '@/components/Layout/Navbar'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
+import Navbar from "@/components/Layout/Navbar";
+import Footer from "@/components/Layout/Footer";
+import CarCard from "@/components/HomePage/CarCard";
+import Carousel from "@/components/HomePage/Carousel";
+
 export default function Home() {
   return (
     <>
@@ -10,9 +14,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='homepage'>
-        <Navbar/>
+      <div className="homepage">
+        <Navbar />
+        <Carousel />
+        <div className="car-display">
+          <h1>Browse From Our Massive car Collection</h1>
+          <div className="car-card">
+            <CarCard />
+            <CarCard />
+            <CarCard />
+            <CarCard />
+            <CarCard />
+            <CarCard />
+            <CarCard />
+            <CarCard />
+            <CarCard />
+            <CarCard />
+          </div>
+        </div>
+        <Footer />
       </div>
-          </>
-  )
+    </>
+  );
 }
