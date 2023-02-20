@@ -1,57 +1,118 @@
+@font-face {
+  font-family: "cerelion";
+  src: local("cerelion"), url("../../../public/Fonts/7\ Brier/Brier-Bold.otf") format("truetype");
+}
+
 .homepage {
+  font-family: 'cerelion';
+    overflow: hidden;
 }
 .carousel-images {
   display: flex;
   height: 90vh;
-  width: 100vw;
   overflow: hidden;
   object-fit: contain;
+  align-items: center;
   justify-content: center;
   img {
-    max-width: 100%;
-    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
   }
 }
 .car-display {
-  margin:0 10rem ;
-  padding: 5rem 1rem;
   text-align: center;
+  padding: 3rem 0;
 }
 .car-card {
+    padding: 1rem 5rem;
+    width: 100vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 .card-main {
-  margin-top: 5rem;
-  margin-right: 1rem;
-//   width: 30rem;
-  overflow: hidden;
-  border-radius: 4rem;
   border: 1px;
-  background: rgba(255, 255, 255, 0.46);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 5rem;
+  // width: 25rem;
+  overflow: hidden;
+  margin-right: 1rem;
+  border-radius: 4rem;
   backdrop-filter: blur(9.1px);
+  transform-style: preserve-3d;
   -webkit-backdrop-filter: blur(9.1px);
+  background: rgba(255, 255, 255, 0.46);
+  transition: transform 0.2s, box-shadow 0.2s;
   border: 1px solid rgba(255, 255, 255, 0.19);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 
   .card-image {
     height: 30rem;
     object-fit: contain;
+    
     img {
-      ::after {
-        opacity: 0.1;
-        background-color: black;
-      }
       max-width: 100%;
       max-height: 100%;
       border-top-left-radius: 4rem;
       border-top-right-radius: 4rem;
+      :hover{
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: .5;
+      }
     }
   }
   .card-details {
     padding: 1rem 0;
+    .enquire-button{
+      height: 4rem;
+      margin-right: 2px;
+      border-top-left-radius: 4rem;
+      border-bottom-left-radius: 4rem;
+      .plus-button{
+        display: none;
+      }
+    }
+    .enquire-button:hover{
+      .plus-button{
+        color: red;
+        height: 4rem;
+        display: block;
+      }
+      h6{
+        display: none;
+      }
+    }
+    .details-button{
+      transition: 1s;
+      height: 4rem;
+      border-top-right-radius: 4rem;
+      border-bottom-right-radius: 4rem;
+      .plus-button{
+        display: none;
+      }
+    }
+    .details-button:hover{
+      transition: 1s;
+      .plus-button{
+        transition: 1s;
+        color: red;
+        height: 4rem;
+        display: block;
+      }
+      h6{
+        transition: 1s;
+        display: none;
+      }
+    }
     h3 {
       padding: 1rem 0;
+      span{
+        color: red;
+      }
+    }
+    Button{
+        width: 10rem;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-style: none;
     }
   }
   .card-specs {
@@ -59,8 +120,51 @@
     align-items: center;
     justify-content: center;
     padding: 2rem 0rem;
+    border-color: rgb(216, 215, 215);
+    border-top-style: solid;
     .spec{
         margin: 0 1rem;
     }
+  }
+}
+
+
+@media (max-width: 575px) {
+  .carousel-images{
+    display: none;
+  }
+  .car-card{
+    padding: 0 1rem;
+  }
+  .card-main{
+    width: 24rem;
+  }
+}
+@media (max-width: 420px) {
+  .carousel-images{
+    display: none;
+  }
+  .car-card{
+    padding: 0 1rem;
+  }
+  .card-main{
+    width: 24rem;
+  }
+}
+@media (max-width:375px) {
+  .carousel-images{
+    display: none;
+  }
+  .car-card{
+    padding: 0 1rem;
+  }
+  .card-main{
+    width: 20rem;
+  }
+  .enquire-button{
+    border-radius: 4rem;
+  }
+  .details-button{
+    border-radius: 4rem;
   }
 }
