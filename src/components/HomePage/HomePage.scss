@@ -1,6 +1,6 @@
 @font-face {
   font-family: "cerelion";
-  src: local("cerelion"), url("../../../public/Fonts/7\ Brier/Brier-Bold.otf") format("truetype");
+  src: local("cerelion"), url("../../../public/Fonts/22\ Grotta/Grotta-Light.otf") format("truetype");
 }
 
 .homepage {
@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 .car-landing{
-  height: 80vh;
+  height: 85vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@
     padding: 1rem 5rem;
     width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .card-main {
   border: 1px;
