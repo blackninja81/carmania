@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
 import CarCard from "@/components/HomePage/CarCard";
+import Landing from "@/components/HomePage/Landing";
 import Carousel from "@/components/HomePage/Carousel";
 
 export default function Home() {
@@ -16,7 +17,8 @@ export default function Home() {
       </Head>
       <div className="homepage">
         <Navbar />
-        <Carousel />
+        {/* <Carousel /> */}
+        <Landing/>
         <div className="car-display">
           <h1>Browse From Our Massive car Collection</h1>
           <div className="car-card">
