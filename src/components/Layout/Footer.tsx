@@ -11,15 +11,15 @@ import {
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer-section">
       <footer className="text-center text-lg-start text-muted">
         {/* <!-- Section: Social media --> */}
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           {/* <!-- Left --> */}
-          <div className="me-5 d-none d-lg-block">
+          <div className="footer-section-1 me-5 d-none d-lg-block">
             <span>Get connected with us on social networks:</span>
           </div>
-          <div>
+          <div className="footer-section-1">
             <a href="" className="me-4 text-reset">
               <i>
                 <AiFillFacebook />
@@ -127,7 +127,7 @@ const Footer = () => {
             {/* <!-- Grid row --> */}
           </div>
         </section>
-        <div className="text-center p-4">
+        <div className="footer-section-2 text-center p-4">
           <h6>
             © {new Date().getFullYear()} Copyright:
             <a className="text-reset fw-bold" href="https://timbaktum.com">
