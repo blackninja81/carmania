@@ -19,7 +19,7 @@ const Landing = () => {
   }, [theme]);
   return (
     <div className="car-landing">
-      <Image src={background === 'carlight' ? carlight : cardark} alt="car-landing"height={900} width={900} />
+      <Image src={background === 'carlight' ? carlight : cardark} alt="car-landing"height={1200} width={1200} />
       <div className="right-nav">
       <button>Enquire</button>
       <button>Enquire</button>
