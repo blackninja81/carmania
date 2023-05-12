@@ -1,0 +1,113 @@
+#light{
+color: black;
+    .main-navbar {
+        position: fixed;
+      display: flex;
+      width: 100vw;
+      padding: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1001;
+      background-color: white;
+      box-shadow: 2px 2px 2px rgb(226, 221, 221);
+      
+      .navbar-items {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        .pin {
+            display: flex;
+            padding: 1rem;
+            align-items: center;
+            justify-content: space-around;
+            
+          }
+        ul {
+            width: 75vw;
+            display: flex;
+            padding: 0rem 4rem;
+            margin-top: 15px;
+            flex-direction: row;
+            justify-content: space-between;
+            li {
+                // padding: 1rem;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                text-decoration: none;
+            ol {
+              display: none;
+            }
+          }
+        }
+      }
+      
+    }
+}
+#dark{
+    color: white;
+    .main-navbar {
+        position: fixed;
+      display: flex;
+      width: 100vw;
+      padding: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1001;
+      background: rgb(14,38,68);
+      background: -moz-linear-gradient(90deg, rgba(14,38,68,1) 0%, rgba(14,38,68,1) 87%);
+      background: -webkit-linear-gradient(90deg, rgba(14,38,68,1) 0%, rgba(14,38,68,1) 87%);
+      background: linear-gradient(90deg, rgba(14,38,68,1) 0%, rgba(14,38,68,1) 87%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e2644",endColorstr="#0e2644",GradientType=1); 
+      box-shadow: 2px 2px 2px rgb(105, 100, 100);
+      
+      .navbar-items {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        .pin {
+            display: flex;
+            padding: 1rem;
+            align-items: center;
+            justify-content: space-around;
+            
+          }
+        ul {
+            width: 75vw;
+            display: flex;
+            padding: 0rem 4rem;
+            margin-top: 15px;
+            flex-direction: row;
+            justify-content: space-between;
+            li {
+                // padding: 1rem;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                text-decoration: none;
+            ol {
+              display: none;
+            }
+          }
+        }
+      }
+      
+    }
+    .footer-section h1,h2,h3,h4,h5,h6,p{
+        color: white;
+    }
+    .footer-section-2 h6{
+        color: white;
+    }
+    .footer-section-1{
+        color: white;
+    }
+}
+
+
+@media (max-width: 768px) {
+  .main-navbar {
+    text-align: center;
+    flex-direction: column;
+  }
+}
