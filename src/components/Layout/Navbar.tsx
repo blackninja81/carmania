@@ -2,8 +2,6 @@ import Image from "next/image";
 import Switch from "react-switch";
 import { useContext, useState } from "react";
 import { ThemeContext } from "@/context/Context";
-import { Link, animateScroll as scroll } from "react-scroll";
-
 import {
   AiOutlinePhone,
   AiFillFacebook,
