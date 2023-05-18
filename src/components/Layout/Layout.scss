@@ -1,9 +1,11 @@
 #light {
   .nav {
-    width: 100vw;
+    width: 98vw;
+    margin: 0vw 1vw;
     z-index: 1001;
     display: flex;
     position: fixed;
+    border-radius: 1rem;
     align-items: center;
     justify-content: space-around;
     background: hsl(0 0% 100% /0.01);
@@ -33,12 +35,17 @@
     width: 2.5rem;
     height: 0.2rem;
     margin: 0.4rem;
-    background: rgb(204, 204, 204);
+    background: rgb(0, 0, 0);
     transition: 0.3s ease-in;
   }
 
   @media screen and (max-width: 768px) {
+    .nav{
+      backdrop-filter: blur(2rem);
+      background: hsl(0 0% 100% /0.1);
+    }
     .nav__brand {
+      border-radius: 2rem;
       // display: none;
       backdrop-filter: blur(2rem);
       background: hsl(0 0% 100% /0.1);
@@ -126,7 +133,8 @@
 }
 #dark {
   .nav {
-    width: 100vw;
+    width: 98vw;
+    margin: 0vw 1vw;
     z-index: 1001;
     display: flex;
     position: fixed;
@@ -175,7 +183,6 @@
     .nav__brand {
       // display: none;
       backdrop-filter: blur(2rem);
-      // background: hsl(0 0% 100% /0.1);
 
       img {
         mix-blend-mode: color-burn;
