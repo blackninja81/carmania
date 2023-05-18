@@ -4,26 +4,30 @@
     url("../../../public/Fonts/22\ Grotta/Grotta-Light.otf") format("truetype");
 }
 #light {
-  background-color: white;
   .car-landing {
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    margin-top: 5rem;
     align-items: center;
+    flex-direction: column;
+    background-color: white;
     justify-content: space-around;
-
+    img{
+      margin-top: -12rem;
+    }
     .right-nav {
       padding: 1rem;
       display: flex;
-      margin-left: 5rem;
+      margin-top: -10rem;
       flex-direction: row;
       button {
         margin: 1rem;
         width: 15rem;
-        border-radius: 2rem;
         border: none;
         height: 4rem;
+        border-radius: 2rem;
+        background-color: rgb(199, 200, 201);
       }
     }
   }
@@ -35,7 +39,7 @@
     padding: 1rem;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .card-main {
     border: 1px;
@@ -43,8 +47,7 @@
     // width: 25rem;
     overflow: hidden;
     margin-right: 1rem;
-
-    border-radius: 4rem;
+    border-radius: 2rem;
     backdrop-filter: blur(9.1px);
     transform-style: preserve-3d;
     -webkit-backdrop-filter: blur(9.1px);
@@ -52,16 +55,14 @@
     transition: transform 0.2s, box-shadow 0.2s;
     border: 1px solid rgba(255, 255, 255, 0.19);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-
     .card-image {
       aspect-ratio: 5/4;
       object-fit: contain;
-
       img {
         max-width: 100%;
         max-height: 100%;
-        border-top-left-radius: 4rem;
-        border-top-right-radius: 4rem;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
       }
       img:hover {
         background-color: rgba(0, 0, 0, 0.5);
@@ -72,49 +73,10 @@
       p{
         padding: 1rem 2rem;
       }
-      .enquire-button {
-        height: 4rem;
-        margin-right: 2px;
-        border-top-left-radius: 4rem;
-        border-bottom-left-radius: 4rem;
-        .plus-button {
-          display: none;
-        }
-      }
-      .enquire-button:hover {
-        .plus-button {
-          color: green;
-          height: 4rem;
-          display: block;
-        }
-        h6 {
-          display: none;
-        }
-      }
-      .details-button {
-        height: 4rem;
-        border-top-right-radius: 4rem;
-        border-bottom-right-radius: 4rem;
-        .plus-button {
-          display: none;
-        }
-      }
-      .details-button:hover {
-        .plus-button {
-          transition: 1s;
-          color: green;
-          height: 4rem;
-          display: block;
-        }
-        h6 {
-          transition: 1s;
-          display: none;
-        }
-      }
       h3 {
         padding: 1rem 0;
         span {
-          color: green;
+          color: green
         }
       }
       Button {
@@ -130,13 +92,138 @@
       align-items: center;
       justify-content: center;
       border-top-style: solid;
-      border-color: rgb(216, 215, 215);
+      border-color: rgb(214, 202, 202);
       .spec {
         margin: 0 1rem;
       }
     }
   }
+  .homepage {
+    font-family: "cerelion";
+    overflow: hidden;
+  }
+  
+  @media (max-width: 810px) {
+    .car-landing {
+      .right-nav {
+        margin-left: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        button{
+          width: 80vw;
+        }
+      }
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      // width: 20rem;
+    }
+  }
+  @media (max-width: 575px) {
+    .car-landing {
+      .right-nav {
+        width: 100vw;
+        display: flex;
+        margin-left: 0;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        button {
+          width: 80vw;
+        }
+      }
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
+  }
+  @media (max-width: 420px) {
+    .car-landing {
+      .right-nav {
+        width: 100vw;
+        display: flex;
+        margin-left: 0;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        button {
+          width: 80vw;
+        }
+      }
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
+  }
+  @media (max-width: 375px) {
+    .car-landing {
+      .right-nav {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        button {
+          width: 80vw;
+        }
+        margin-bottom: 5rem;
+      }
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 20rem;
+    }
+    .enquire-button {
+      border-radius: 4rem;
+    }
+    .details-button {
+      border-radius: 4rem;
+    }
+  }
+  
 }
+
+
+
+
+
+// <----------Dark mode---------->
+
+
+
+
+
+
 #dark {
   background: rgb(14, 38, 68);
   background: -moz-linear-gradient(
@@ -161,16 +248,17 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    margin-top: 5rem;
     align-items: center;
+    flex-direction: column;
     justify-content: space-around;
-img{
-  aspect-ratio: 16/9;
-}
+    img{
+      margin-top: -12rem;
+    }
     .right-nav {
       padding: 1rem;
       display: flex;
-      margin-left: 5rem;
+      margin-top: -10rem;
       flex-direction: row;
       button {
         margin: 1rem;
@@ -181,15 +269,27 @@ img{
       }
     }
   }
+  .right-nav {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    button {
+      margin: 1rem;
+      width: 15rem;
+      border-radius: 2rem;
+      border: none;
+      height: 4rem;
+    }
+  }
   .car-display {
     text-align: center;
     padding: 3rem 0;
   }
   .car-card {
-    // padding: 1rem 5rem;
+    padding: 1rem;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .card-main {
     border: 1px;
@@ -225,7 +325,6 @@ img{
     .card-image {
       aspect-ratio: 5/4;
       object-fit: contain;
-
       img {
         max-width: 100%;
         max-height: 100%;
@@ -238,49 +337,8 @@ img{
     }
     .card-details {
       padding: 1rem 0;
-      .enquire-button {
-        height: 4rem;
-        margin-right: 2px;
-        border-top-left-radius: 4rem;
-        border-bottom-left-radius: 4rem;
-        .plus-button {
-          display: none;
-        }
-      }
-      .enquire-button:hover {
-        .plus-button {
-          color: lightgreen;
-          height: 4rem;
-          display: block;
-        }
-        h6 {
-          display: none;
-        }
-        
-      }
       p{
         padding: 1rem 2rem;
-      }
-      .details-button {
-        height: 4rem;
-        border-top-right-radius: 4rem;
-        border-bottom-right-radius: 4rem;
-        .plus-button {
-          display: none;
-        }
-      }
-      .details-button:hover {
-        transition: 1s;
-        .plus-button {
-          transition: 1s;
-          color: lightgreen;
-          height: 4rem;
-          display: block;
-        }
-        h6 {
-          transition: 1s;
-          display: none;
-        }
       }
       h3 {
         padding: 1rem 0;
@@ -311,48 +369,118 @@ img{
     color: white;
     background-color: rgb(102, 102, 104);
   }
-}
-.homepage {
-  font-family: "cerelion";
-  overflow: hidden;
-}
 
-@media (max-width: 575px) {
-  .carousel-images {
-    display: none;
+  .homepage {
+    font-family: "cerelion";
+    overflow: hidden;
   }
-  .car-card {
-    padding: 0 1rem;
+  
+  @media (max-width: 810px) {
+    .car-landing {
+      .right-nav {
+        margin-left: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        button{
+          width: 80vw;
+        }
+      }
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      // width: 20rem;
+    }
   }
-  .card-main {
-    width: 24rem;
+  @media (max-width: 575px) {
+    .car-landing {
+      .right-nav {
+        width: 100vw;
+        display: flex;
+        margin-left: 0;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        button {
+          width: 80vw;
+        }
+      }
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
   }
-}
-@media (max-width: 420px) {
-  .carousel-images {
-    display: none;
+  @media (max-width: 420px) {
+    .car-landing {
+      .right-nav {
+        width: 100vw;
+        display: flex;
+        margin-left: 0;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        button {
+          width: 80vw;
+        }
+      }
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
   }
-  .car-card {
-    padding: 0 1rem;
+  @media (max-width: 375px) {
+    .car-landing {
+      .right-nav {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        button {
+          width: 80vw;
+        }
+        margin-bottom: 5rem;
+      }
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 24rem;
+    }
+    .car-card {
+      padding: 0 1rem;
+    }
+    .card-main {
+      width: 20rem;
+    }
+    .enquire-button {
+      border-radius: 4rem;
+    }
+    .details-button {
+      border-radius: 4rem;
+    }
   }
-  .card-main {
-    width: 24rem;
-  }
-}
-@media (max-width: 375px) {
-  .carousel-images {
-    display: none;
-  }
-  .car-card {
-    padding: 0 1rem;
-  }
-  .card-main {
-    width: 20rem;
-  }
-  .enquire-button {
-    border-radius: 4rem;
-  }
-  .details-button {
-    border-radius: 4rem;
-  }
+  
 }
