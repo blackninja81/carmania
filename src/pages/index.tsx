@@ -51,15 +51,6 @@ export default function Home() {
           <h1>Browse From Our Massive car Collection</h1>
           <div className="car-card">
             <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
           </div>
         </div>
         <Footer />

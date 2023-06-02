@@ -39,12 +39,11 @@
     padding: 1rem;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
   .card-main {
     border: 1px;
     margin-top: 5rem;
-    // width: 25rem;
     overflow: hidden;
     margin-right: 1rem;
     border-radius: 2rem;
@@ -56,11 +55,10 @@
     border: 1px solid rgba(255, 255, 255, 0.19);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     .card-image {
-      aspect-ratio: 5/4;
-      object-fit: contain;
       img {
-        max-width: 100%;
-        max-height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: fill;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
       }
@@ -94,7 +92,7 @@
       border-top-style: solid;
       border-color: rgb(214, 202, 202);
       .spec {
-        margin: 0 1rem;
+        margin: 0 .8rem;
       }
     }
   }
@@ -289,12 +287,11 @@
     padding: 1rem;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
   .card-main {
     border: 1px;
     margin-top: 5rem;
-    // width: 25rem;
     overflow: hidden;
     margin-right: 1rem;
     border-radius: 2rem;
@@ -323,15 +320,16 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 
     .card-image {
-      aspect-ratio: 5/4;
-      object-fit: contain;
       img {
-        max-width: 100%;
-        max-height: 100%;
+        object-fit:fill;
+        min-width: 100%;
+        min-height: 100%;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
+        transition: 1s;
       }
       img:hover {
+        opacity: .5;
         background-color: rgba(0, 0, 0, 0.5);
       }
     }
@@ -361,7 +359,7 @@
       border-top-style: solid;
       border-color: rgb(114, 107, 107);
       .spec {
-        margin: 0 1rem;
+        margin: 0 .8rem;
       }
     }
   }
