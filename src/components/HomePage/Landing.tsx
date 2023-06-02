@@ -21,9 +21,9 @@ const Landing = () => {
     <div className="car-landing">
       <Image src={background === 'carlight' ? carlight : cardark} alt="car-landing"height={600} width={900} />
       <div className="right-nav">
-      <button>Enquire</button>
-      <button>Enquire</button>
-      <button>Enquire</button>
+      <button>VIew Our Catalogue</button>
+      <button>Contact Us</button>
+      <button>Sell With Us</button>
       </div> 
     </div>
   );

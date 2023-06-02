@@ -9,15 +9,17 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { BsCartPlus, BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
-
+import {NavLinks} from "../../constants/constants.jsx";
 import logo from "../../assets/carsoko.png";
+import Link from "next/link.js";
 
 const Navbar = () => {
-  type ThemeContextValue = {
+  
+  interface ThemeContextValue {
     theme: string;
     toggleTheme: () => void;
-  };
-
+  }
+  
   const { theme, toggleTheme }: ThemeContextValue = useContext(ThemeContext);
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
@@ -42,24 +44,10 @@ const Navbar = () => {
           </a>
           <ul className={active}>
             <li className="nav__item">
-              <div className="nav__link">Home</div>
+              {NavLinks.map( link=>(
+                <Link href={link.link} className="nav__link">{link.title}</Link>
+              ))}
             </li>
-
-            <li className="nav__item">
-              <div className="nav__link">About</div>
-            </li>
-
-            <li className="nav__item">
-              <div className="nav__link">Skills</div>
-            </li>
-
-            <li className="nav__item">
-              <div className="nav__link">Portfolio</div>
-            </li>
-
-            <li className="nav__item">
-              <div className="nav__link">Contact</div>
-            </li>            
             
               <div className="pin">
           <div className="socials-nav">

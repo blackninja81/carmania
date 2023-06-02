@@ -75,7 +75,7 @@ const Footer = () => {
                 </p>
                 <p>
                   <a href="/Games/Sale" className="text-decoration-none text-reset">
-                    Discounts
+                    Our Stock
                   </a>
                 </p>
                 <p>
@@ -83,27 +83,10 @@ const Footer = () => {
                     href="/Games/Playstation"
                     className="text-decoration-none text-reset"
                   >
-                    PS 4
+                    Imports
                   </a>
                 </p>
-                <p>
-                  <a href="/Games/Xbox" className="text-decoration-none text-reset">
-                    X BOX
-                  </a>
-                </p>
-                <p>
-                  <a href="/Games/Switch" className="text-decoration-none text-reset">
-                    Switch
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href="Accessories/Accessories"
-                    className="text-decoration-none text-reset"
-                  >
-                    Accesories
-                  </a>
-                </p>
+                
               </div>
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-center">
                 {/* <!-- Links --> */}
@@ -131,7 +114,7 @@ const Footer = () => {
           <h6>
             © {new Date().getFullYear()} Copyright:
             <a className="text-reset fw-bold" href="https://timbaktum.com">
-              Swift Games
+              Car Max
             </a>
           </h6>
         </div>
