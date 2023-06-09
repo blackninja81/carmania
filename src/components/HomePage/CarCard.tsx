@@ -5,17 +5,19 @@ import { Cars } from "@/constants/constants";
 import image1 from "../../assets/carousel1.jpg";
 import { GiGearStickPattern, GiGasPump } from "react-icons/gi";
 import { AiOutlineArrowRight, AiOutlineBgColors } from "react-icons/ai";
+import Link from "next/link";
 
 const CarCard = () => {
   return (
     <>
-      {Cars.map((car) => (
-        <div className="card-main">
+      {Cars.slice(0,5).map((car) => (
+        <div key={car.id} className="card-main">
+          <Link className="car-link" href='/Cars' target='_blank'>
           <div className="card-image">
             <Image src={car.image} width={350} height={250} alt={car.name} />
           </div>
           <div className="card-details">
-            <p>{car.description}</p>
+            <p>{car.description.substring(0, 250)}...</p>
             <h3>{car.name}</h3>
             <h3>
               KSH <span>{car.price}</span>
@@ -43,6 +45,7 @@ const CarCard = () => {
               {car.color}
             </div>
           </div>
+        </Link>
         </div>
       ))}
     </>

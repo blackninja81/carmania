@@ -13,7 +13,7 @@
     flex-direction: column;
     background-color: white;
     justify-content: space-around;
-    img{
+    img {
       margin-top: -12rem;
     }
     .right-nav {
@@ -24,10 +24,11 @@
       button {
         margin: 1rem;
         width: 15rem;
+        border-radius: 1.5rem;
         border: none;
         height: 4rem;
-        border-radius: 2rem;
-        background-color: rgb(199, 200, 201);
+        background-color: rgb(233, 240, 255);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
       }
     }
   }
@@ -39,7 +40,7 @@
     padding: 1rem;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
   .card-main {
     border: 1px;
@@ -68,13 +69,13 @@
     }
     .card-details {
       padding: 1rem 0;
-      p{
+      p {
         padding: 1rem 2rem;
       }
       h3 {
         padding: 1rem 0;
         span {
-          color: green
+          color: green;
         }
       }
       Button {
@@ -92,15 +93,19 @@
       border-top-style: solid;
       border-color: rgb(214, 202, 202);
       .spec {
-        margin: 0 .8rem;
+        margin: 0 0.8rem;
       }
+    }
+    .car-link {
+      text-decoration: none;
+      color: black;
     }
   }
   .homepage {
     font-family: "cerelion";
     overflow: hidden;
   }
-  
+
   @media (max-width: 810px) {
     .car-landing {
       .right-nav {
@@ -111,7 +116,7 @@
         align-items: center;
         flex-direction: column;
         margin-bottom: 5rem;
-        button{
+        button {
           width: 80vw;
         }
       }
@@ -208,19 +213,9 @@
       border-radius: 4rem;
     }
   }
-  
 }
 
-
-
-
-
 // <----------Dark mode---------->
-
-
-
-
-
 
 #dark {
   background: rgb(14, 38, 68);
@@ -250,7 +245,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    img{
+    img {
       margin-top: -12rem;
     }
     .right-nav {
@@ -261,24 +256,15 @@
       button {
         margin: 1rem;
         width: 15rem;
-        border-radius: 2rem;
+        border-radius: 1.5rem;
         border: none;
         height: 4rem;
+        background-color: rgb(72, 102, 167);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
       }
     }
   }
-  .right-nav {
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    button {
-      margin: 1rem;
-      width: 15rem;
-      border-radius: 2rem;
-      border: none;
-      height: 4rem;
-    }
-  }
+
   .car-display {
     text-align: center;
     padding: 3rem 0;
@@ -287,7 +273,7 @@
     padding: 1rem;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
   .card-main {
     border: 1px;
@@ -321,7 +307,7 @@
 
     .card-image {
       img {
-        object-fit:fill;
+        object-fit: fill;
         min-width: 100%;
         min-height: 100%;
         border-top-left-radius: 2rem;
@@ -329,13 +315,13 @@
         transition: 1s;
       }
       img:hover {
-        opacity: .5;
+        opacity: 0.5;
         background-color: rgba(0, 0, 0, 0.5);
       }
     }
     .card-details {
       padding: 1rem 0;
-      p{
+      p {
         padding: 1rem 2rem;
       }
       h3 {
@@ -359,8 +345,12 @@
       border-top-style: solid;
       border-color: rgb(114, 107, 107);
       .spec {
-        margin: 0 .8rem;
+        margin: 0 0.8rem;
       }
+    }
+    .car-link {
+      text-decoration: none;
+      color: white;
     }
   }
   button {
@@ -372,7 +362,36 @@
     font-family: "cerelion";
     overflow: hidden;
   }
-  
+
+  .search-category {
+    text-align: center;
+    h2 {
+      padding: 1rem;
+    }
+    .categories {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+
+      .car-brand {
+        padding: 1rem;
+        display: grid;
+        width: 95vw;
+        margin: 3rem;
+        border-radius: 4rem;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        .brand-logo {
+          margin: 10px;
+          -webkit-filter: grayscale(100%); 
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
+
   @media (max-width: 810px) {
     .car-landing {
       .right-nav {
@@ -383,7 +402,7 @@
         align-items: center;
         flex-direction: column;
         margin-bottom: 5rem;
-        button{
+        button {
           width: 80vw;
         }
       }
@@ -480,5 +499,4 @@
       border-radius: 4rem;
     }
   }
-  
 }
