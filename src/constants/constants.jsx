@@ -58,7 +58,54 @@ import Toyota from '../assets/logos/toyota.png'
 import Volkswagen from '../assets/logos/volkswagen.png'
 import Logo from '../assets/carsoko.png'
 
+import convertible from '../assets/body/convertible.png'
+import coupe from '../assets/body/coupe.png'
+import crossover from '../assets/body/crossover.png'
+import hatchback from '../assets/body/hatchback.png'
+import pickup from '../assets/body/pickup.png'
+import sedan from '../assets/body/sedan.png'
+import suv from '../assets/body/suv.png'
+import van from '../assets/body/van.png'
+import wagon from '../assets/body/wagon.png'
 
+export const Body = [
+    {
+        name:"convertible",
+        logo:convertible
+    },
+    {
+        name:"Coupe",
+        logo:coupe
+    },
+    {
+        name:"CrossOver",
+        logo:crossover
+    },
+    {
+        name:"Hatchback",
+        logo:hatchback
+    },
+    {
+        name:"Pickup",
+        logo:pickup
+    },
+    {
+        name:"Sedan",
+        logo:sedan
+    },
+    {
+        name:"SUV",
+        logo:suv
+    },
+    {
+        name:"Van",
+        logo:van
+    },
+    {
+        name:"Wagon",
+        logo:wagon
+    }
+]
 export const Brands = [
     {
      name:"audi",
