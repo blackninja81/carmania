@@ -167,9 +167,9 @@
     .car-card {
       padding: 0 1rem;
     }
-    .card-main {
-      // width: 20rem;
-    }
+    // .card-main {
+    //   // width: 20rem;
+    // }
   }
   @media (max-width: 575px) {
     .car-landing {
@@ -410,6 +410,7 @@
     text-align: center;
     .tab-list{
       justify-content: center;
+      list-style-type: none;
       align-items: center;
       text-decoration: none;
       display: flex;
@@ -465,9 +466,9 @@
     .car-card {
       padding: 0 1rem;
     }
-    .card-main {
-      // width: 20rem;
-    }
+    // .card-main {
+    //   // width: 20rem;
+    // }
   }
   @media (max-width: 575px) {
     .car-landing {
