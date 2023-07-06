@@ -70,96 +70,119 @@ import wagon from '../assets/body/wagon.png'
 
 export const Body = [
     {
+        id:1,
         name:"convertible",
         logo:convertible
     },
     {
+        id:2,
         name:"Coupe",
         logo:coupe
     },
     {
+        id:3,
         name:"CrossOver",
         logo:crossover
     },
     {
+        id:4,
         name:"Hatchback",
         logo:hatchback
     },
     {
+        id:5,
         name:"Pickup",
         logo:pickup
     },
     {
+        id:6,
         name:"Sedan",
         logo:sedan
     },
     {
+        id:7,
         name:"SUV",
         logo:suv
     },
     {
+        id:8,
         name:"Van",
         logo:van
     },
     {
+        id:9,
         name:"Wagon",
         logo:wagon
     }
 ]
 export const Brands = [
     {
+        id:1,
      name:"audi",
      logo:Audi
     },
     {
+        id:2,
         name:"BMW",
         logo:bmw
        },
        {
+        id:3,
         name:"Honda",
         logo:Honda
        },
        {
+        id:4,
         name:"Jaguar",
         logo:Jaguar
        },
        {
+        id:5,
         name:"KIA",
         logo:Kia
        },
        {
+        id:6,
         name:"Land Rover",
         logo:LandRover
        },
        {
+        id:7,
         name:"Lexus",
         logo:Lexus
        },
        {
+        id:8,
         name:"Mercedes",
         logo:Mercedes
        },
        {
+        id:9,
         name:"Nissan",
         logo:Nissan
        },
        {
+        id:10,
         name:"Porsche",
         logo:Porsche
        },
        {
+        id:11,
         name:"Subaru",
         logo:Subaru
        },
        {
+        id:12,
         name:"Tesla",
         logo:Tesla
        },
        {
+        id:13,
         name:"Toyota",
         logo:Toyota
        },
        {
+        id:14,
         name:"Others",
         logo:Logo
        },
